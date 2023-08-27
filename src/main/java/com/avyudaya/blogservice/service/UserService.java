@@ -64,7 +64,7 @@ public class UserService {
         var user = userRepository.findById(id).orElseThrow(() -> new NotFoundException("User not found."));
 
         user.setUsername(
-                user.getUsername().replace("@", String.format("_%s@", user.getId().toString())));
+                user.getUsername().replace("@", String.format("_%s@", user.getId())));
         user.setEnabled(false);
         user = userRepository.save(user);
 

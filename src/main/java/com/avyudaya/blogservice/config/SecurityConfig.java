@@ -86,13 +86,7 @@ public class SecurityConfig {
                 // Our public endpoints
                 .requestMatchers("/api/public/**")
                 .permitAll()
-                .requestMatchers(HttpMethod.GET, "/api/author/**")
-                .permitAll()
-                .requestMatchers(HttpMethod.POST, "/api/author/search")
-                .permitAll()
-                .requestMatchers(HttpMethod.GET, "/api/book/**")
-                .permitAll()
-                .requestMatchers(HttpMethod.POST, "/api/book/search")
+                .requestMatchers(HttpMethod.GET, "/api/blog/**")
                 .permitAll()
                 // Our private endpoints
                 .anyRequest()

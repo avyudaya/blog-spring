@@ -14,8 +14,8 @@ import java.util.Set;
 public class DatabaseInitializer implements ApplicationListener<ApplicationReadyEvent> {
 
     private final List<String> usernames =
-            List.of("ada.lovelace@nix.io", "alan.turing@nix.io");
-    private final List<String> fullNames = List.of("Ada Lovelace", "Alan Turing");
+            List.of("admin@admin.com", "user@user.com");
+    private final List<String> fullNames = List.of("Admin Admin", "User User");
     private final List<String> roles = List.of(Role.ADMIN, Role.USER);
     private final String password = "test123";
 
